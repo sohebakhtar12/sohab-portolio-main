@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Soheb Akhtar — Full-Stack Developer</title>
+
+    <meta name="description" content="Full-Stack Developer experienced in building scalable web applications using React.js, Node.js, Express.js, and MongoDB. Solved 400+ problems on LeetCode and passionate about problem solving and building clean, user-friendly interfaces.">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- AOS Animation -->
+    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Scroll Progress -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Cursor Glow -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- Particle Canvas -->
+    <canvas id="particleCanvas"></canvas>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="header-inner">
+            <a href="#" class="logo">
+                <div class="logo-icon">S</div>
+                <span>Soheb<span class="logo-accent">.dev</span></span>
+            </a>
+
+            <nav id="nav" class="desktop-nav">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#achievements" class="nav-link">Achievements</a>
+                <a href="#certifications" class="nav-link">Certifications</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+        </div>
+
+        <!-- Mobile dropdown nav -->
+        <nav id="mobileNav" class="mobile-nav">
+            <a href="#about" class="nav-link">About</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#experience" class="nav-link">Experience</a>
+            <a href="#achievements" class="nav-link">Achievements</a>
+            <a href="#certifications" class="nav-link">Certifications</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <div class="hero-badge" data-aos="fade-up" data-aos-delay="100">
+                <span class="badge-dot"></span> Available for opportunities
+            </div>
+
+            <h1 data-aos="fade-up" data-aos-delay="200">
+                Hi, I'm <span class="gradient-text">Soheb Akhtar</span><br>
+                <span class="typing-wrapper">I <span id="typed-text"></span><span class="cursor-blink">|</span></span>
+            </h1>
+
+            <p class="hero-sub" data-aos="fade-up" data-aos-delay="300">
+                Full-Stack Developer experienced in building scalable web applications using React.js, Node.js, Express.js, and MongoDB. Solved 400+ problems on LeetCode, demonstrating strong problem-solving and data structures skills. Passionate about developing efficient
+                solutions and creating clean, user-friendly interfaces.
+            </p>
+
+            <div class="hero-stats" data-aos="fade-up" data-aos-delay="400">
+                <div class="stat"><span class="stat-num" data-count="2">0</span>+<span class="stat-label">Projects</span></div>
+                <div class="stat"><span class="stat-num" data-count="400">0</span>+<span class="stat-label">DSA Problems</span></div>
+                <div class="stat"><span class="stat-num" data-count="12">0</span>+<span class="stat-label">Skills</span></div>
+            </div>
+
+            <div class="hero-cta" data-aos="fade-up" data-aos-delay="500">
+
+                <a href="https://drive.google.com/file/d/1LezeXKE4MxT_e3LMqBJZYzatFL_kX2NJ/view" target="_blank" class="btn-primary magnetic">Resume</a>
+
+                <a href="#contact" class="btn-primary magnetic">Contact Me</a>
+
+                <a href="#projects" class="btn-primary magnetic">
+                    <span>View Projects</span>
+                    <span class="btn-arrow">→</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="hero-visual" data-aos="fade-left" data-aos-delay="400" data-aos-duration="1200">
+            <div class="avatar-glow"></div>
+            <div class="orbit orbit-1"></div>
+            <div class="orbit orbit-2"></div>
+            <div class="orbit orbit-3"></div>
+            <div class="float-icon float-1" data-speed="2">⚛️</div>
+            <div class="float-icon float-2" data-speed="3">🚀</div>
+            <div class="float-icon float-3" data-speed="1.5">✦</div>
+            <div class="float-icon float-4" data-speed="2.5">◆</div>
+            <div class="avatar-frame">
+                <img src="profile.jpg" alt="Soheb Akhtar" />
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+        <div class="section-inner">
+            <h2 class="section-title" data-aos="fade-up">About <span class="gradient-text">Me</span></h2>
+            <div class="about-grid">
+                <div class="about-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="about-card-inner">
+                        <p>
+                            My name is <strong>Soheb Akhtar</strong>. I completed my <strong>Bachelor of Technology in Computer Science</strong> (2021–2025) from <strong>Jaypee University of Engineering and Technology, Guna, MP</strong>.
+                        </p>
+
+                        <p>
+                            I have strong experience in <strong>full-stack development</strong> and computer science fundamentals, specializing in <strong>React.js, Node.js, Express.js, and MongoDB</strong>.
+                        </p>
+
+                        <p>
+                            I am highly active in competitive programming and have solved <strong>400+ problems on LeetCode</strong>, continually strengthening my Data Structures and Algorithms skills.
+                        </p>
+
+                        <p>
+                            I am currently seeking opportunities as a <strong>Full-Stack Developer</strong> where I can build impactful digital products and continue growing my technical expertise.
+                        </p>
+                    </div>
+                </div>
+                <div class="about-info" data-aos="fade-up" data-aos-delay="200">
+                    <div class="info-item"><span class="info-label">Name</span><span>Soheb Akhtar</span></div>
+                    <div class="info-item"><span class="info-label">Location</span><span>Noida, Delhi, 201303</span></div>
+                    <div class="info-item"><span class="info-label">Degree</span><span>B.Tech in CSE</span></div>
+                    <div class="info-item"><span class="info-label">Phone</span><span>+91 9693039834</span></div>
+                    <div class="info-item"><span class="info-label">Email</span><span>sohebakhtar2001@gmail.com</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section">
+        <div class="section-inner">
+            <h2 class="section-title" data-aos="fade-up">Technical <span class="gradient-text">Skills</span></h2>
+            <p class="section-sub" data-aos="fade-up" data-aos-delay="100">Technologies and tools I work with</p>
+
+            <!-- Programming Languages -->
+            <h3 class="skills-category" data-aos="fade-up">Programming Languages & Frontend</h3>
+            <div class="skills-grid">
+                <div class="skill-card" data-aos="fade-up" style="--delay:.1s">
+                    <div class="skill-icon">C++</div>
+                    <h3>C++</h3>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-level="90"></div>
+                    </div>
+                </div>
+                <div class="skill-card" data-aos="fade-up" style="--delay:.15s">
+                    <div class="skill-icon">☕</div>
+                    <h3>Java</h3>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-level="75"></div>
+                    </div>
+                </div>
+                <div class="skill-card" data-aos="fade-up" style="--delay:.2s">
+                    <div class="skill-icon">SQL</div>
+                    <h3>SQL</h3>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-level="85"></div>
+                    </div>
+                </div>
+                <div class="skill-card" data-aos="fade-up" style="--delay:.25s">
+                    <div class="skill-icon">JavaScript</div>
+                    <h3>JavaScript</h3>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-level="90"></div>
+                    </div>
+                </div>
+                <div class="skill-card" data-aos="fade-up" style="--delay:.3s">
+                    <div class="skill-icon">⚛️</div>
+                    <h3>React</h3>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-level="85"></div>
+                    </div>
+                </div>
+                <div class="skill-card" data-aos="fade-up" style="--delay:.35s">
+                    <div class="skill-icon">🌐</div>
+                    <h3>HTML / CSS</h3>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-level="95"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tools & Technologies -->
+            <h3 class="skills-category" data-aos="fade-up">Tools & Technologies</h3>
+            <div class="skills-grid">
+                <div class="skill-card" data-aos="fade-up" style="--delay:.1s">
+                    <div class="skill-icon">💻</div>
+                    <h3>VS Code</h3>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-level="90"></div>
+                    </div>
+                </div>
+                <div class="skill-card" data-aos="fade-up" style="--delay:.15s">
+                    <div class="skill-icon">⚙️</div>
+                    <h3>GitHub</h3>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-level="85"></div>
+                    </div>
+                </div>
+                <div class="skill-card" data-aos="fade-up" style="--delay:.2s">
+                    <div class="skill-icon">🍃</div>
+                    <h3>MongoDB</h3>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-level="80"></div>
+                    </div>
+                </div>
+                <div class="skill-card" data-aos="fade-up" style="--delay:.25s">
+                    <div class="skill-icon">🗄️</div>
+                    <h3>MySQL</h3>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-level="85"></div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- CS Fundamentals -->
+            <h3 class="skills-category" data-aos="fade-up">CS Fundamentals</h3>
+            <div class="skills-grid">
+                <div class="skill-card" data-aos="fade-up" style="--delay:.1s">
+                    <div class="skill-icon">🧠</div>
+                    <h3>OOPs</h3>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-level="85"></div>
+                    </div>
+                </div>
+                <div class="skill-card" data-aos="fade-up" style="--delay:.15s">
+                    <div class="skill-icon">🗃️</div>
+                    <h3>DBMS</h3>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-level="85"></div>
+                    </div>
+                </div>
+                <div class="skill-card" data-aos="fade-up" style="--delay:.2s">
+                    <div class="skill-icon">📊</div>
+                    <h3>Data Structures</h3>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-level="90"></div>
+                    </div>
+                </div>
+                <div class="skill-card" data-aos="fade-up" style="--delay:.25s">
+                    <div class="skill-icon">📈</div>
+                    <h3>Algorithms</h3>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-level="85"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dev Projects -->
+    <section id="projects" class="section">
+        <div class="section-inner">
+            <h2 class="section-title" data-aos="fade-up">Dev <span class="gradient-text">Projects</span></h2>
+            <p class="section-sub" data-aos="fade-up" data-aos-delay="100">Full-stack projects showcasing my problem-solving and development skills</p>
+
+            <div class="project-grid">
+                <div class="project-card" data-aos="fade-up" style="--delay:.1s">
+                    <div class="project-card-header">
+                        <div class="project-icon">🛒</div>
+                        <a href="https://github.com/sohebakhtar12" target="_blank" class="project-link" title="View Project Code" style="text-decoration: none;">🔗</a>
+                    </div>
+                    <h3>E-Commerce Website Full Stack</h3>
+                    <p>Designed and developed a full-stack e-commerce platform managing over 10,000+ product entries.</p>
+                    <div class="project-tags">
+                        <span>React.js</span><span>Node.js</span><span>Express.js</span><span>MongoDB</span>
+                    </div>
+                    <button class="work-upon-btn" onclick="this.closest('.project-card').classList.toggle('expanded')">
+            Work Upon <span class="work-upon-arrow">▾</span>
+          </button>
+                    <div class="work-upon-panel">
+                        <ul>
+                            <li><strong>Scale:</strong> Managed 10,000+ product entries successfully.</li>
+                            <li><strong>Features:</strong> Product browsing, advanced filtering, cart management, and secure credit card transaction integration.</li>
+                            <li><strong>Dashboard:</strong> Built an admin dashboard to manage 100+ categories and track product status updates.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="fade-up" style="--delay:.2s">
+                    <div class="project-card-header">
+                        <div class="project-icon">🚀</div>
+                        <a href="https://github.com/sohebakhtar12" target="_blank" class="project-link" title="View Project Code" style="text-decoration: none;">🔗</a>
+                    </div>
+                    <h3>Space Research Website Frontend</h3>
+                    <p>Crafted a visually appealing website showcasing the latest developments in space research.</p>
+                    <div class="project-tags">
+                        <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                    </div>
+                    <button class="work-upon-btn" onclick="this.closest('.project-card').classList.toggle('expanded')">
+            Work Upon <span class="work-upon-arrow">▾</span>
+          </button>
+                    <div class="work-upon-panel">
+                        <ul>
+                            <li><strong>Engagement:</strong> Achieved 95% user satisfaction with dynamic visuals and animations.</li>
+                            <li><strong>Navigation:</strong> Seamlessly enabled users to explore 10+ missions and 20+ research highlights effortlessly.</li>
+                            <li><strong>UX:</strong> Executed 5+ interactive elements for maximizing visitor engagement.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="section">
+        <div class="section-inner">
+            <h2 class="section-title" data-aos="fade-up">Education</h2>
+
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-up" style="--delay:.1s">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2021 – 2025</span>
+                        <h3>Bachelor of Technology in Computer Science</h3>
+                        <p><strong>Jaypee University Of Engineering and Technology</strong> Guna, MP</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-up" style="--delay:.2s">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2019 – 2020</span>
+                        <h3>Intermediate</h3>
+                        <p><strong>Maheshwari Academy Secondary School</strong> Katihar, Bihar</p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-up" style="--delay:.3s">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2017 – 2018</span>
+                        <h3>High School</h3>
+                        <p><strong>Maheshwari Academy School</strong> Katihar, Bihar</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements -->
+    <section id="achievements" class="section">
+        <div class="section-inner">
+            <h2 class="section-title" data-aos="fade-up">Key <span class="gradient-text">Achievements</span></h2>
+            <p class="section-sub" data-aos="fade-up" data-aos-delay="100">Competitive programming and extracurricular milestones</p>
+
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-up" style="--delay:.1s">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>LeetCode</h3>
+                        <p>Solved <strong>400+ problems</strong> on LeetCode, continually strengthening Data Structures and Algorithms proficiency.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-up" style="--delay:.2s">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Badminton Tournaments</h3>
+                        <p>&bull; Participated in over <strong>5+ competitive badminton tournaments</strong>, competing against players from various skill levels.<br><br> &bull; Secured victory in <strong>3 championships</strong>, showcasing strong strategy,
+                            precision, and teamwork.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications -->
+    <section id="certifications" class="section">
+        <div class="section-inner">
+
+            <h2 class="section-title" data-aos="fade-up">
+                My <span class="gradient-text">Certifications</span>
+            </h2>
+
+            <div class="certifications-grid">
+
+                <a href="https://drive.google.com/file/d/1tHKtHATiefxuftjJ3dxdwSQJFBbdUfqt/view" target="_blank" class="cert-link">
+
+                    <div class="certification-card" data-aos="fade-up" style="--delay:.1s">
+                        <div class="cert-icon">📜</div>
+                        <h3>Data Structures & Algorithms</h3>
+                    </div>
+
+                </a>
+
+
+                <a href="https://drive.google.com/file/d/1IJO58m-r5420t4xfj8qfbRMxUbJaGq9a/view" target="_blank" class="cert-link">
+
+                    <div class="certification-card" data-aos="fade-up" style="--delay:.2s">
+                        <div class="cert-icon">📜</div>
+                        <h3>C++ Programming</h3>
+                    </div>
+
+                </a>
+
+
+                <a href="https://drive.google.com/file/d/12WbV0D-9yxI9s3BuTETzcualjKyYLPGj/view" target="_blank" class="cert-link">
+
+                    <div class="certification-card" data-aos="fade-up" style="--delay:.3s">
+                        <div class="cert-icon">📜</div>
+                        <h3>Java Programming</h3>
+                    </div>
+
+                </a>
+
+
+                <a href="YOUR_HTML_CERTIFICATE_LINK_HERE" target="_blank" class="cert-link">
+
+                    <div class="certification-card" data-aos="fade-up" style="--delay:.4s">
+                        <div class="cert-icon">📜</div>
+                        <h3>HTML, CSS & JavaScript</h3>
+                    </div>
+
+                </a>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+        <div class="section-inner">
+            <h2 class="section-title" data-aos="fade-up">Get In <span class="gradient-text">Touch</span></h2>
+            <p class="section-sub" data-aos="fade-up" data-aos-delay="100">Open to full-stack developer roles, software engineering positions, and interesting collaborations</p>
+
+            <div class="contact-grid">
+                <form class="contact-form" data-aos="fade-up" id="contactForm" action="https://formsubmit.co/sohebakhtar2001@gmail.com" method="POST">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_template" value="box">
+                    <input type="hidden" name="_subject" value="New Portfolio Message">
+                    <div class="form-group">
+                        <input type="text" id="formName" name="name" required autocomplete="off" placeholder=" ">
+                        <label for="formName">Your Name</label>
+                        <span class="form-line"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="formEmail" name="email" required autocomplete="off" placeholder=" ">
+                        <label for="formEmail">Your Email</label>
+                        <span class="form-line"></span>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="formMsg" name="message" rows="4" required placeholder=" "></textarea>
+                        <label for="formMsg">Your Message</label>
+                        <span class="form-line"></span>
+                    </div>
+                    <button type="submit" class="btn-primary" id="submitBtn">
+            <span id="submitText">Send Message</span>
+            <span class="btn-arrow" id="submitArrow">→</span>
+          </button>
+                </form>
+
+                <div class="contact-info" data-aos="fade-up" data-aos-delay="200">
+                    <div class="contact-item">
+                        <span class="contact-icon">📍</span>
+                        <div><strong>Location</strong>
+                            <p>Noida, Delhi, 201303</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <span class="contact-icon">📱</span>
+                        <div><strong>Phone</strong>
+                            <p>+91 9693039834</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <span class="contact-icon">📧</span>
+                        <div><strong>Email</strong>
+                            <p>sohebakhtar2001@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+
+                        <a href="https://www.linkedin.com/in/soheb-akhtar08/" target="_blank" class="social-btn">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+
+                        <a href="https://github.com/sohebakhtar12" target="_blank" class="social-btn">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+
+                        <a href="https://leetcode.com/u/soheb_123/" target="_blank" class="social-btn">
+                            <img src="https://cdn.simpleicons.org/leetcode" alt="leetcode" width="20">
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-inner">
+            <p>© <span id="year"></span> Soheb Akhtar — Crafted with care</p>
+            <div class="footer-links">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast">
+        <div class="toast-icon" id="toastIcon">✓</div>
+        <div class="toast-message" id="toastMessage">Message sent successfully!</div>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
